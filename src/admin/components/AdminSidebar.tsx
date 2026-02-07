@@ -1,3 +1,4 @@
+import { Link, useLocation } from 'react-router';
 import { 
   Home, 
   Users, 
@@ -11,7 +12,6 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { CustomLogo } from '@/components/custom/CustomLogo';
-import { Link, useLocation } from 'react-router';
 
 interface SidebarProps {
   isCollapsed: boolean;

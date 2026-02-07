@@ -19,12 +19,14 @@ export const AdminProductsPage = () => {
           subtitle='Aqui puedes ver y administrar los productos'
         />
 
-        <Link to='/admin/products/new'>
-          <Button>
-            <PlusIcon />
-              Nuevo Producto
-          </Button>
-        </Link>
+        <div className="flex justify-end mb-10 gap-4">
+          <Link to="/admin/products/new">
+            <Button>
+              <PlusIcon />
+                Nuevo Producto
+            </Button>
+          </Link>  
+        </div>
       </div>
 
       <Table className='
@@ -63,11 +65,7 @@ export const AdminProductsPage = () => {
             <TableCell>100 stock</TableCell>
             <TableCell>XS, S, M, L, XL</TableCell>
             <TableCell className="text-right">
-              <Link 
-                to={`/admin/products/t-shirt-teslo`}
-              >
-                Editar
-              </Link>
+              <Link to={`/admin/products/t-shirt-teslo`}>Editar</Link>
             </TableCell>
           </TableRow>
         </TableBody>
